@@ -19,4 +19,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
+    'data': [
+        'reports/prismacom_order_report.xml',
+        'reports/prismacom_order_template.xml',
 }
