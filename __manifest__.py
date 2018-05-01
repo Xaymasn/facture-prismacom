@@ -2,11 +2,9 @@
 {
     'name': "Personalisation Facture Prismacom",
 
-    'summary': """
-        Juste pour personnaliser les factures de prismacom afin de satisfaire à leur exigences.""",
+    'summary': "Juste pour personnaliser les factures de prismacom afin de satisfaire à leur exigences.",
 
-    'description': """
-    """,
+    'description': " ",
 
     'author': "Elhadji Malang Diedhiou",
     'website': "http://www.supermalang.com",
@@ -21,5 +19,6 @@
     'depends': ['base'],
     'data': [
         'reports/prismacom_order_report.xml',
-        'reports/prismacom_order_template.xml',
+        'reports/prismacom_order_template.xml'
+    ]
 }
