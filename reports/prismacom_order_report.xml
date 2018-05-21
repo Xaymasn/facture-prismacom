@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<odoo>
-  <report id="report_prismacom_order"
-          name="prismacom.sale_order_template"
-          model="sale.order"
-          string="Facture Prismacom"
-          report_type="qweb-pdf" />
-</odoo>

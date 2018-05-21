@@ -9,7 +9,7 @@
     'version': '11.0.0.1',
     'depends': ['sale_management'],
     'data': [
-        'reports/prismacom_order_report.xml',
-        'reports/prismacom_order_template.xml'
+        'reports/rtp_order_report.xml',
+        'reports/rtp_order_template.xml'
     ]
 }
