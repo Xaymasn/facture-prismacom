@@ -7,7 +7,7 @@
     'website': "http://www.supermalang.com",
     'category': 'Sales',
     'version': '11.0.0.1',
-    'depends': ['sale'],
+    'depends': ['sale_management'],
     'data': [
         'reports/prismacom_order_report.xml',
         'reports/prismacom_order_template.xml'
