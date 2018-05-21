@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_facture-prismacom_facture-prismacom,facture-prismacom.facture-prismacom,model_facture-prismacom_facture-prismacom,,1,0,0,0
