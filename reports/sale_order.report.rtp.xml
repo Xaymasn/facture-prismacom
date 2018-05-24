@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		 <!-- Héritage de la vue "sale.report_saleorder_document" -->
+        <template id="rtp_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+            <!-- Ajout des information de location -->
+            <xpath expr="//div[@class='page']/table/thead" position="replace">
+                 <thead style=" background-color: #893b74;">
+                    <tr>
+                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Customer</th>
+                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Invoicing and shipping address</th>
+                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Quotation Date</th>
+                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Quotation #</th>
+                    </tr>
+               </thead>
+            </xpath>
+	</data>
+</odoo>

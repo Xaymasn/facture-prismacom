@@ -9,7 +9,6 @@
     'version': '11.0.0.1',
     'depends': ['sale_management'],
     'data': [
-        'reports/rtp_sale_order_report.xml',
-        'reports/rtp_sale_order_template.xml'
+        'reports/sale_order.report.rtp.xml',
     ]
 }
