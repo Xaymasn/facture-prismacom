@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
-		 <!-- Héritage de la vue "sale.report_saleorder_document" -->
-        <template id="rtp_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
-            <xpath expr="//head" position="inside">
+        <!-- Adds assets in Odoo -->
+        <template id="assets_common" name="reports_templates_personnalises assets" inherit_id="report.assets_common">
+            <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/style.css"/>
             </xpath>
-            
+        </template>
+
+
+		 <!-- Héritage de la vue "sale.report_saleorder_document" -->
+        <template id="rtp_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
             <!-- Ajout des information de location -->
             <xpath expr="//div[@id='informations']" position="after">
                 <p class="malang-test">Bonjour Malang</p>
             </xpath>
-            
         </template>
 	</data>
 </odoo>
