@@ -4,7 +4,7 @@
 		 <!-- Héritage de la vue "sale.report_saleorder_document" -->
         <template id="rtp_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
             <!-- Ajout des information de location -->
-            <xpath expr="//div[@class='page']/table[1]/thead" position="replace">
+            <xpath expr="//div[@id='informations']" position="after">
                  <thead style=" background-color: #893b74;">
                     <tr>
                         <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Customer</th>
