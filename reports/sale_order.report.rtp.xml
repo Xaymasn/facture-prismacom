@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 	<data>
+        <!-- Adds assets in Odoo -->
+        <template id="rtp_assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/style.css"/>
+            </xpath>
+        </template>
+
+
 		 <!-- Héritage de la vue "sale.report_saleorder_document" -->
         <template id="rtp_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
             <!-- Ajout des information de location -->
             <xpath expr="//div[@id='informations']" position="after">
-                 <thead style=" background-color: #893b74;">
-                    <tr>
-                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Customer</th>
-                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Invoicing and shipping address</th>
-                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Quotation Date</th>
-                        <th width="30px" style="border: 1px solid #fff !important; color:#fff !important; ">Quotation #</th>
-                    </tr>
-               </thead>
+                <p class="malang-test">Bonjour Malang</p>
             </xpath>
         </template>
 	</data>
