@@ -1,11 +1,11 @@
 /** Polices personnalisée */
 @font-face {
-    font-family: "Century Gothic";
+    font-family: "CenturyGothic";
     src: url("/reports_templates_personnalises/static/src/css/CenturyGothicRegulat.ttf");
 }
 
 *{
-    font-family: "Century Gothic", Arial, Helvetica, sans-serif !important;
+    font-family: CenturyGothic, Arial, Helvetica, sans-serif !important;
 }
 
 div.header address.mb0 span[itemprop='streetAddress']{
@@ -15,7 +15,7 @@ div.header address.mb0 span[itemprop='streetAddress']{
 div.page address.mb0{
     background: #5a2069;
     color:#fff;
-    font: 14px bold "Century Gothic";
+    font: 14px bold CenturyGothic;
     padding: 1em 0.5em;
 }
 
@@ -56,5 +56,5 @@ div.footer div.text-center ul.list-inline{
 div.footer div.text-center ul.list-inline li{
     display:block;
     padding-left: 5px;
-    font: 12px bold "Century Gothic";
+    font: 12px bold CenturyGothic;
 }
