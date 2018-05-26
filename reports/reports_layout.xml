@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+        <!-- Héritage du template des assets de rapports -->
+        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/>
+            </xpath>
+        </template>
+
+        <!-- Héritage du template de layout standard (web.external_layout_standard) des rapports de facturation/vente  -->
+        <template id="rtp_external_layout_inherit" inherit_id="web.external_layout_standard">
+            <!-- Personnalisation du header -->
+            <xpath expr="//div[@class='header']" position="replace">
+                <div class="header">
+                    <div class="row">
+                        <div class="col-xs-6 mb4">
+                            <img t-if="company.logo" t-att-src="'data:image/png;base64,%s' % to_text(company.logo)" style="max-height: 75px;"/>
+                        </div>
+                        <div class="col-xs-9 text-left rtp-header-slogan" t-field="company.report_header" name="moto"/>
+                    </div>
+                </div>
+            </xpath>
+
+            <!-- Personnalisation du footer -->
+            <xpath expr="//div[@class='footer']" position="replace">
+                <div class="footer">
+                    <div class="text-left">
+                        <ul class="list-unstyled mb4">
+                            <li t-if="company.street"><span t-field="company.street"/></li>
+                            <li t-if="company.city and company.zip">BP: <span t-field="company.zip"/> <span t-field="company.city"/></li>
+                            <li t-if="company.phone and ">Phone: <span t-field="company.phone"/></li>
+                            <li t-if="company.email"><span t-field="company.email"/></li>
+                            <li t-if="company.website">Web: <span t-field="company.website"/></li>
+                            <li t-if="company.vat"><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="company.vat"/></li>
+                            <li>
+                                <div name="financial_infos">
+                                    <span t-field="company.report_footer"/>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <!--div class="text-muted">
+                            Page: <span class="page"/> / <span class="topage"/>
+                        </div-->
+                    </div>
+                </div>
+            </xpath>
+        </template>
+	</data>
+</odoo>
