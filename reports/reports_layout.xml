@@ -29,7 +29,7 @@
                         <ul class="list-unstyled mb4">
                             <li t-if="company.street"><span t-field="company.street"/></li>
                             <li t-if="company.city and company.zip">BP: <span t-field="company.zip"/> <span t-field="company.city"/></li>
-                            <li t-if="company.phone and ">Phone: <span t-field="company.phone"/></li>
+                            <li t-if="company.phone">Phone: <span t-field="company.phone"/></li>
                             <li t-if="company.email"><span t-field="company.email"/></li>
                             <li t-if="company.website">Web: <span t-field="company.website"/></li>
                             <li t-if="company.vat"><t t-esc="company.country_id.vat_label or 'TIN'"/>: <span t-field="company.vat"/></li>
