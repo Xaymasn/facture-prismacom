@@ -23,7 +23,7 @@
             </xpath>
 
             <!-- Personnalisation du footer -->
-            <xpath expr="//div[@class='footer']" position="replace">
+            <!--xpath expr="//div[@class='footer']" position="replace">
                 <div class="footer">
                     <div class="text-left" style="margin-left:10px;">
                         <ul class="list-unstyled mb4">
@@ -41,12 +41,12 @@
                         </ul>
 
 
-                        <!--div class="text-muted">
+                        <div class="text-muted">
                             Page: <span class="page"/> / <span class="topage"/>
-                        </div-->
+                        </div>
                     </div>
                 </div>
-            </xpath>
+            </xpath-->
         </template>
 	</data>
 </odoo>
