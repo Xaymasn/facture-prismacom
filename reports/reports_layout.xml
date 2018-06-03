@@ -2,10 +2,66 @@
 <odoo>
 	<data>
         <!-- Héritage du template des assets de rapports -->
-        <!--template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common"-->
-        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="report.layout">
+        <!--template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="report.layout">
+                <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/-->
+        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
             <xpath expr="//style" position="after">
-                <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/>
+                <style>
+                    /** Polices personnalisée */
+@font-face {
+    font-family: CenturyGothic;
+    src: url(CenturyGothicRegulat.ttf);
+}
+
+*{
+    font-family: CenturyGothic, Arial, Helvetica, sans-serif !important;
+}
+
+.rtp-header-slogan{
+    color: #5a2069 !important;
+}
+div.page address.mb0{
+    background: #5a2069;
+    color:#fff;
+    font: 14px bold CenturyGothic;
+    padding: 1.5em 1em;
+    width: 75%;
+    float: right;
+}
+address.mb0 span[itemprop='name']{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.page h2{
+    font-weight: bold;
+    font-size: 16px!important;
+    color:#5a2069 !important;
+}
+
+.table.table-condensed{
+    border: 1px solid #5a2069!important;
+}    
+.table.table-condensed thead {
+    background: #5a2069;
+    color: white;
+}    
+
+div.footer{
+    /*padding-top:1em;
+    padding-bottom: 1em;
+    border-left: 2px solid #5a2069;*/
+    color: #5a2069!important;
+}
+div.footer div.text-left ul.list-unstyled{
+    margin:0;padding:0;
+}
+div.footer div.text-center ul.list-inline li{
+    display:block;
+    padding-left: 5px;
+    font: 12px bold CenturyGothic;
+}
+                </style>
             </xpath>
         </template>
 

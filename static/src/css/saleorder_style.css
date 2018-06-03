@@ -11,7 +11,6 @@
 .rtp-header-slogan{
     color: #5a2069 !important;
 }
-
 div.page address.mb0{
     background: #5a2069;
     color:#fff;
@@ -20,7 +19,6 @@ div.page address.mb0{
     width: 75%;
     float: right;
 }
-
 address.mb0 span[itemprop='name']{
     font-weight: bold;
     font-size: 16px;
@@ -46,12 +44,11 @@ div.footer{
     border-left: 2px solid #5a2069;*/
     color: #5a2069!important;
 }
-
-/*div.footer div.text-left ul.list-unstyled{
+div.footer div.text-left ul.list-unstyled{
     margin:0;padding:0;
 }
 div.footer div.text-center ul.list-inline li{
     display:block;
     padding-left: 5px;
     font: 12px bold CenturyGothic;
-}*/
+}
