@@ -2,11 +2,11 @@
 <odoo>
 	<data>
         <!-- Héritage du template des assets de rapports -->
-        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
+        <!--template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
             <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/>
             </xpath>
-        </template>
+        </template-->
 
         <!-- Héritage du template de layout standard (web.external_layout_standard) des rapports de facturation/vente  -->
         <template id="rtp_external_layout_inherit" inherit_id="web.external_layout_standard">
@@ -23,7 +23,7 @@
             </xpath>
 
             <!-- Personnalisation du footer -->
-            <!--xpath expr="//div[@class='footer']" position="replace">
+            <xpath expr="//div[@class='footer']" position="replace">
                 <div class="footer">
                     <div class="text-left" style="margin-left:10px;">
                         <ul class="list-unstyled mb4">
@@ -41,12 +41,12 @@
                         </ul>
 
 
-                        <div class="text-muted">
+                        <!--div class="text-muted">
                             Page: <span class="page"/> / <span class="topage"/>
-                        </div>
+                        </div-->
                     </div>
                 </div>
-            </xpath-->
+            </xpath>
         </template>
 	</data>
 </odoo>
