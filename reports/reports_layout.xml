@@ -2,11 +2,12 @@
 <odoo>
 	<data>
         <!-- Héritage du template des assets de rapports -->
-        <!--template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
-            <xpath expr="." position="inside">
+        <!--template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common"-->
+        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="report.layout">
+            <xpath expr="//style" position="after">
                 <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/>
             </xpath>
-        </template-->
+        </template>
 
         <!-- Héritage du template de layout standard (web.external_layout_standard) des rapports de facturation/vente  -->
         <template id="rtp_external_layout_inherit" inherit_id="web.external_layout_standard">
