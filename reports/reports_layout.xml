@@ -2,7 +2,7 @@
 <odoo>
 	<data>
         <!-- Héritage du template des assets de rapports -->
-        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="report.minimal_layout">
+        <template id="report_assets_common" name="reports_templates_personnalises assets" inherit_id="web.report_assets_common">
             <xpath expr="." position="inside">
                 <link rel="stylesheet" href="/reports_templates_personnalises/static/src/css/saleorder_style.css"/>
             </xpath>
